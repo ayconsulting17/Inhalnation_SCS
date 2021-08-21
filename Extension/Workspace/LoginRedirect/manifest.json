@@ -1,0 +1,71 @@
+{
+	"name": "LoginRedirect",
+	"fantasyName": "LoginRedirect",
+	"vendor": "AECC",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.7.0",
+	"description": "",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/LoginRedirect/Templates/aecc_loginredirect_loginredirect.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/LoginRedirect/Templates/aecc_loginredirect_loginredirect.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/LoginRedirect/Templates/aecc_loginredirect_loginredirect.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/LoginRedirect/JavaScript/AECC.LoginRedirect.LoginRedirect.js",
+			"checkout": "Modules/LoginRedirect/JavaScript/AECC.LoginRedirect.LoginRedirect.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/LoginRedirect/JavaScript/AECC.LoginRedirect.LoginRedirect.js",
+					"Modules/LoginRedirect/JavaScript/LoginRedirect.View.js",
+					"Modules/LoginRedirect/JavaScript/AECC.LoginRedirect.LoginRedirect.Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/LoginRedirect/JavaScript/AECC.LoginRedirect.LoginRedirect.js",
+					"Modules/LoginRedirect/JavaScript/LoginRedirect.View.js",
+					"Modules/LoginRedirect/JavaScript/AECC.LoginRedirect.LoginRedirect.Model.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/aecc/LoginRedirect@1.7.0",
+	"activation_id": "1",
+	"extension_id": "5601"
+}

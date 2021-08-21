@@ -1,0 +1,107 @@
+.facets-items-collection-view-cell-span2 {
+    @extend .col-sm-2;
+    @extend .col-xs-6;
+}
+
+.facets-items-collection-view-cell-span3 {
+	@extend .col-sm-3;
+    @extend .col-xs-6;
+    
+    @media (min-width: $screen-md-min) {
+        border: 1px solid rgba(127, 127, 127, 0.16);
+        padding: 20px 20px 5px 20px;
+        flex-basis: 25%;
+        margin-right: 15px;
+        min-height: 100%;
+        transition: height .25s;
+        position: relative;
+        transition: height 1s;
+        -webkit-transition: all 0.25s ease;
+        z-index:1;
+        box-shadow: 0 1px 4px #f5f5f5;
+    }
+
+//     &:hover{
+
+//         z-index: 2;
+//         -webkit-transition: all 0.25s ease;
+//         margin-bottom: -50px;
+//         background: white;
+    
+
+//     .plp-btns-container{
+//         display: flex;
+//         position: absolute;
+//         // background-color: white;
+//         // width: 324px;
+//         margin-left: -21px;
+//         // border-right: 1px solid rgba(127, 127, 127, 0.16);
+//         height: 50px;
+//         z-index: 1000;
+//         // border-left: 1px solid rgba(127, 127, 127, 0.16);
+//         visibility: visible;
+//         opacity: 1;
+//         position:absolute;
+//         margin-top: 60px;
+//     }
+
+//     .plp-quick-view{
+//         margin-left:15px;
+//     }
+
+    // .sku-plp {
+    //     display: inline-block;
+    // }
+// }
+
+ 
+}
+
+.facets-items-collection-view-cell-span4 {
+    @extend .col-sm-4;
+    @extend .col-xs-6;
+}
+
+.facets-items-collection-view-cell-span4 {
+    @extend .col-sm-4;
+    @extend .col-xs-6;
+}
+
+.facets-items-collection-view-cell-span5 {
+    @extend .col-sm-5;
+    @extend .col-xs-6;
+}
+
+.facets-items-collection-view-cell-span6 {
+	@extend .col-sm-6;
+    @extend .col-xs-6;
+}
+
+.facets-items-collection-view-cell-span7 {
+    @extend .col-sm-7;
+    @extend .col-xs-12;
+}
+
+.facets-items-collection-view-cell-span8 {
+    @extend .col-sm-8;
+    @extend .col-xs-12;
+}
+
+.facets-items-collection-view-cell-span9 {
+    @extend .col-sm-9;
+    @extend .col-xs-12;
+}
+
+.facets-items-collection-view-cell-span10 {
+    @extend .col-sm-10;
+    @extend .col-xs-12;
+}
+
+.facets-items-collection-view-cell-span11 {
+    @extend .col-sm-11;
+    @extend .col-xs-12;
+}
+
+.facets-items-collection-view-cell-span12 {
+	@extend .col-xs-12;
+}
