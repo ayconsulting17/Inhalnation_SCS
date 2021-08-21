@@ -1,0 +1,54 @@
+{
+	"name": "HeaderExtension",
+	"fantasyName": "HeaderExtension",
+	"vendor": "AECC",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": " ",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/HeaderExtension/JavaScript/AECC.HeaderExtension.HeaderExtension.js",
+			"myaccount": "Modules/HeaderExtension/JavaScript/AECC.HeaderExtension.HeaderExtension.js",
+			"checkout": "Modules/HeaderExtension/JavaScript/AECC.HeaderExtension.HeaderExtension.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HeaderExtension/JavaScript/AECC.HeaderExtension.HeaderExtension.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/HeaderExtension/JavaScript/AECC.HeaderExtension.HeaderExtension.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/HeaderExtension/JavaScript/AECC.HeaderExtension.HeaderExtension.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/aecc/HeaderExtension@1.0.0",
+	"activation_id": "1",
+	"extension_id": "6001"
+}

@@ -1,0 +1,170 @@
+/* Edited for Manor Theme */
+
+.facets-item-cell-grid {
+	@extend .item-cell;
+
+	.cart-add-to-cart-button-container {
+		width:100%;
+	}
+
+
+	.cart-add-to-cart-button-button {
+		margin-top: 0px;
+		color: #fff;
+		background-color: #000;
+		border: 1px solid #000;
+		padding: 15px 30px 15px 30px;
+		font-size: .875rem;
+		text-transform: none;
+	}
+
+	.quick-shop-plp{
+		@extend .cart-add-to-cart-button-button;
+		color:black;
+		background-color: white;
+		border: 1px solid rgba(127,127,127,.3);
+	}
+
+	&:hover{
+
+	}
+}
+
+.plp-quick-view{
+	margin-right: 20px;
+}
+
+.plp-btns-container{
+	margin-top: 20px;
+	display: flex;
+    justify-content: center;
+}
+
+.product-line-stock-msg-out{
+	margin-bottom: 40px;
+}
+
+.sku-plp{
+	display: inline-block;
+}
+
+.plp-manufacturer{
+    margin: 1rem 0 0;
+    line-height: 1.3125;
+    color: #000;
+    white-space: normal;
+    opacity: .6;
+}
+
+.facets-item-cell-grid-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-grid-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-grid-image-wrapper {
+	position:relative;
+	text-align:center;
+}
+
+.facets-item-cell-grid-link-image {}
+
+.facets-item-cell-grid-quick-view-icon {}
+
+.facets-item-cell-grid-stock {
+
+	.product-line-stock-msg-out{
+		margin-bottom: 50px;
+	}
+	
+}
+
+.facets-item-cell-grid-details {
+	@extend .item-cell-details;
+	.product-line-stock {
+		text-align:center;
+	}
+	.cart-add-to-cart-button-container {
+		padding: 0 0 $sc-padding-lv3 0;
+	}
+
+	.product-views-price-lead{
+		display: none !important; //hides price from quick cart view
+	}
+
+	.product-views-price-old{
+		display: none;
+	}
+}
+
+.facets-item-cell-grid-image {
+	@extend .item-cell-image;
+	width:auto;
+	height:auto;
+	border:1px solid black;
+}
+
+.facets-item-cell-grid-title {
+	@extend .item-cell-title;
+	height:50px;
+}
+
+.facets-item-cell-grid-price {
+	@extend .small-price;
+	//margin-bottom:$sc-margin-lv2;
+}
+
+.facets-item-cell-grid-rating {
+	display: inline-block;
+}
+
+.facets-item-cell-grid {
+	.global-views-star-rating-area {
+		margin-bottom:$sc-margin-lv2;
+	}
+}
+
+.facets-item-cell-grid-stock-message {
+	text-align:left;
+}
+
+
+.plp-price{
+	font-size: 1.375rem;
+    margin-top: 10px;
+    color: black;
+    font-weight: 400;
+}
+
+.plp-price-sale {
+    color: #de0101;
+    font-size: 1.375rem; 
+    font-weight: 400;
+}
+
+.sale-plp{ //sale-tag
+	color: #fff;
+    background-color: #de0101;
+    font-size: 12px;
+    width: 80px;
+    text-align: center;
+    font-weight: 700;
+    padding: .25rem .3125rem;
+    position: absolute;
+    margin-top: -25px;
+}
+
+
+.plp-price-old{
+	padding-top: 10px;
+    font-size: .8125rem;
+    line-height: 1.38;
+    text-decoration: line-through;
+    opacity: .6;
+}
+
+.plp-grid{
+	min-height: 20px;
+}

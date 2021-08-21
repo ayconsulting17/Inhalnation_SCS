@@ -1,0 +1,91 @@
+/* Edited for Manor Theme */
+
+.facets-item-cell-list {
+	margin: 15px;
+    padding: 15px;
+    border: 1px solid rgba(127,127,127,.16);
+   
+	@extend .row;
+	@extend .item-cell;
+
+	.cart-add-to-cart-button-container {
+		padding-left:0px;
+	}
+
+	.product-line-stock {
+		clear:both;
+	}
+
+	.cart-add-to-cart-button-button {
+		margin-bottom: $sc-margin-lv3;
+	}
+}
+
+.facets-item-cell-list-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-list-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-list-left {
+	@extend .col-xs-3;
+}
+
+.facets-item-cell-list-right {
+	@extend .col-xs-9;
+
+	.item-views-price {
+		text-align:left;
+	}
+}
+
+.facets-item-cell-list-image-wrapper {
+	position:relative;
+	text-align:center;
+}
+
+.facets-item-cell-list-stock-message {
+	text-align:left;
+}
+
+.facets-item-cell-list-details {
+	text-align:center;
+}
+
+.facets-item-cell-list-image {
+	// width:100%;
+	// height:auto;
+}
+
+.facets-item-cell-list-title {
+	@extend .item-cell-title;
+
+}
+
+.facets-item-cell-list-name{
+	font-size: 20px;
+    font-weight: 600;
+}
+
+.manufacturer-plp{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.facets-item-cell-list-price {
+	@extend .small-price;
+	margin-bottom:$sc-margin-lv1;
+}
+
+.facets-item-cell-list-rating {
+	//display: inline-block;
+}
+
+
+.facets-item-cell-list {
+	.global-views-star-rating-area {
+		margin-bottom:$sc-margin-lv2;
+	}
+}

@@ -1,0 +1,110 @@
+.login-register-login-description{
+	margin-top: $sc-margin-lv4;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.login-register-login-form-controls-group{
+	margin-top: $sc-margin-lv4;
+}
+
+.login-register-login-form-label {
+	display: none;
+}
+
+.login-register-login-form-required {
+	@extend .input-required;
+}
+
+.login-register-login-form-input {
+	@extend .input-large;
+}
+
+.login-register-login-submit {
+	@extend .button-large;
+	@extend .button-primary;
+}
+
+.login-register-login-forgot {
+
+	display:block;
+	margin-top: $sc-margin-lv4;
+
+	@media (min-width: $screen-sm-min) {
+		margin-top: 0;
+		margin-left: $sc-margin-lv2;
+	}
+}
+
+.login-register-login-form-messages {
+	margin-top: $sc-margin-lv4;
+
+	.global-views-message-error {
+		@extend .message-error;
+		margin-bottom: 0;
+	}
+
+	.global-views-message-button {
+		display: none;
+	}
+}
+
+.login-register-login-form-messages-timeout {
+	@extend .global-views-message;
+	@extend .global-views-message-error;
+}
+
+.login-register-login-form-controls-group {
+	@extend .login-register-register-form-controls-group;
+}
+
+
+.login-register-login-form-controls {
+	@extend .login-register-register-form-controls !optional;
+}
+
+.login-register-login-register-now{}
+.login-register-login-title{}
+.login-register-login-required{}
+.login-register-login-form-fieldset{}
+
+input#login-password,
+input#login-email {
+    padding: 1.5rem .625rem .375rem;
+    font-family: "Twentieth Century",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    z-index: 1;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid rgba(127,127,127,.3);
+    border-radius: 3px;
+
+	::placeholder{
+		color:black;
+	}
+
+	@media (min-width: $screen-md-min) {
+		width: 70%;
+	}
+}
+
+.login-register-login-form{
+	margin-bottom: 10%;
+
+	@media (min-width: $screen-md-min) {
+	width: 80%;
+    margin-left: auto;
+    text-align: left;
+
+}
+}
+
+.login-links-container{
+	display: inline-block;
+    vertical-align: sub;
+    margin-left: 20px;
+    margin-top: 15px;
+}
