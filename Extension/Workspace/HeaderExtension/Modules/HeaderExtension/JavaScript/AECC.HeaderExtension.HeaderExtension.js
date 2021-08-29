@@ -3,7 +3,6 @@ define(
 	'AECC.HeaderExtension.HeaderExtension'
 ,   [
 		'MultiLanguage.MultiLanguage.View',
-		'Home.View',
 		'Header.View',
 		'Footer.View',
 		'Profile.Model',
@@ -12,7 +11,6 @@ define(
 	]
 ,   function (
 		MultiLanguageView,
-		HomeView,
 		HeaderView,
 		FooterView,
 		ProfileModel,
@@ -46,9 +44,9 @@ define(
 				}
 			  );
 
-				layout.addToViewContextDefinition('Home.View', 'isUserLoggedIn', 'boolean', function (context) {
-					return profile.get('isLoggedIn') === 'T';
-				});
+				// layout.addToViewContextDefinition('Home.View', 'isUserLoggedIn', 'boolean', function (context) {
+				// 	return profile.get('isLoggedIn') === 'T';
+				// });
 
 				layout.addToViewContextDefinition('Header.View', 'shoppingDomain', 'string', function (context) {
 					return shoppingDomain;
