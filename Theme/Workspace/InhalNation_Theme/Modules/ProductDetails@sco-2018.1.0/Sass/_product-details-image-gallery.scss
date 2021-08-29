@@ -1,47 +1,8 @@
 .product-details-image-gallery {
 	position: relative;
 
-	.bx-wrapper {
-		@media (min-width: $screen-sm-min) {
-			display: flex;
-		}
-	}
-	.bx-controls {
-		@media (min-width: $screen-sm-min) {
-			order: 1;
-			margin-top: 0;
-		}
-	}
-	.bx-viewport {
-		@media (min-width: $screen-sm-min) {
-			order: 2;
-		}
-	}
-	.bx-controls-direction {
-		@media (min-width: $screen-sm-min) {
-			display: none;
-		}
-	}
-	.bx-wrapper .bx-pager .bx-pager-item {
-		@media (min-width: $screen-sm-min) {
-			display: block;
-		}
-	}
-	.bx-wrapper .bx-pager{
-		@media (min-width: $screen-sm-min) {
-			margin-top: 0;
-		}
-	}
-
-	.bx-pager-item img {
-		@media (min-width: $screen-sm-min) {
-			max-width: 80px;
-		}
-	}
-	//end move
-
 	.bx-wrapper img {
-		//margin: auto; enable this line generates a bug in PDP image gallery (in zoom functionality).
+		margin: auto;
 		display: block;
 	}
 }
@@ -55,7 +16,7 @@
 	}
 
 	@media (min-width: $screen-lg-min) {
-		height: 555px;
+		height: 450px;
 	}
 
 	img {
@@ -65,7 +26,6 @@
 		height: auto;
 		position: absolute;
 		top: 0;
-		bottom: 0;
 		left: 0;
 		right: 0;
 		margin: auto;
