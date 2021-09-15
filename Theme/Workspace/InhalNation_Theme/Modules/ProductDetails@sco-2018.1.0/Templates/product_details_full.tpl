@@ -47,7 +47,7 @@
 
                 
                             {{#ifEquals isonsale true}}
-                            <div class="percentoff">Save {{percentoff}}% </div>
+                            <div class="percentoff">Save {{salepercent}}% </div>
                             <div class="sale-price-container">
                             <span class="product-views-price-lead">{{saleprice}}</div>
                             <span class="product-views-price-old">{{onlineprice}}</span>
@@ -67,6 +67,12 @@
                             <section data-view="Product.Options" class="product-details-full-product-options-container"></section>
 
                             <div data-cms-area="product_details_full_cms_area_4" data-cms-area-filters="path"></div>
+
+                            {{#ifEquals model.item.isinstock "true"}}
+                            {{#if showStockWarning}}
+                            <span class="stock-limit-warning">Stock Limit Exceeded</span>
+                            {{/if}}
+                            {{/ifEquals}}
 
                             {{#if isPriceEnabled}}
                                 <div data-view="Quantity"></div>
@@ -123,9 +129,9 @@
 		<div data-view="Related.Items"></div>
 	</div>
 
-	<div class="product-details-full-content-correlated-items">
+	{{!-- <div class="product-details-full-content-correlated-items">
 		<div data-view="Correlated.Items"></div>
-	</div>
+	</div> --}}
 
 	<div id="banner-details-bottom" class="content-banner banner-details-bottom" data-cms-area="item_details_banner_bottom" data-cms-area-filters="page_type"></div>
 </div>

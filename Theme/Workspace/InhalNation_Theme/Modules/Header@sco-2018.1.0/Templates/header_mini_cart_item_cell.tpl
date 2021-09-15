@@ -45,7 +45,23 @@
 			    		{{line.quantity}}
 			    	</span>
 			    </li>
+
+			<div class="line-stock-container">
+			<span class="header-mini-cart-item-cell-quantity-label">
+				{{translate 'Current Stock:'}} 
+			</span>
+			<span class="header-mini-cart-item-cell-quantity-value" itemprop="stock">
+				{{quantityavailable}}
+			</span>
+			</div>
+
+			{{#if showStockWarning}}
+			<span class="stock-limit-warning">Stock Limit Exceeded</span>
+			{{/if}}
+
 		    </ul>
+
+			
 		</div>
 </li>
 

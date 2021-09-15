@@ -31,9 +31,9 @@ define(
 				promise.reject();
 			}
 
-			Layout.addToViewContextDefinition('Header.View', 'isUserLoggedIn', 'boolean', function (context) {
-				return profile.get('isLoggedIn') === 'T';
-			});
+			// Layout.addToViewContextDefinition('Header.View', 'isUserLoggedIn', 'boolean', function (context) {
+			// 	return profile.get('isLoggedIn') === 'T';
+			// });
 
 			container.getLayout().on('beforeRender', function () {
 

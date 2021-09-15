@@ -1,4 +1,5 @@
 <div class="product-line-sku-container">
+	
 	<span class="product-line-sku-label">
 		{{translate 'SKU:'}}
 	</span>
@@ -10,6 +11,20 @@
 		<div data-view="GlobalMessageNoLongerAvailable"></div>
 		{{/if}}
 	</div>
+
+	<div class="line-stock-container">
+	<span class="current-stock-line">
+		{{translate 'Current Stock:'}} 
+	</span>
+	<span class="current-stock-line-value" itemprop="stock">
+		{{quantityavailable}}
+	</span>
+	</div>
+
+	{{#if showStockWarning}}
+	<span class="stock-limit-warning">Stock Limit Exceeded</span>
+	{{/if}}
+
 </div>
 
 

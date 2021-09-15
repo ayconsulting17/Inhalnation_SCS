@@ -3,6 +3,7 @@ define(
 	'AECC.HeaderExtension.HeaderExtension'
 ,   [
 		'MultiLanguage.MultiLanguage.View',
+		'Header.MiniCartItemCell.View',
 		'Header.View',
 		'Footer.View',
 		'Profile.Model',
@@ -11,6 +12,7 @@ define(
 	]
 ,   function (
 		MultiLanguageView,
+		HeaderMiniCartItemCellView,
 		HeaderView,
 		FooterView,
 		ProfileModel,
@@ -38,6 +40,16 @@ define(
 			if(layout)
 			{
 
+				HeaderMiniCartItemCellView.prototype.getContext = _.wrap(HeaderMiniCartItemCellView.prototype.getContext, function (fn) {
+					var context = fn.apply(this, _.toArray(arguments).slice(1));
+					var lineqty = this.model.get('quantity');
+					var quantityavailable = this.model.get('item').get('quantityavailable');
+					console.log('HeaderMiniCartItemCellView',context)
+					context.quantityavailable = quantityavailable;
+					context.showStockWarning = lineqty > quantityavailable;
+					return context;
+				});
+
 				layout.addToViewEventsDefinition('Header.View','click [data-action="homepage"]',
 				function(event) {
 				  Backbone.history.navigate(shoppingDomain, { trigger: true });
@@ -53,7 +65,15 @@ define(
 				});
 
 				layout.addToViewContextDefinition('Header.View', 'showOverlay', 'boolean', function (context) {
-					return (existingFrag !== "/" && "/signup") && (profile.get('isLoggedIn') === 'F') ;
+					return (existingFrag !== "/scs/shopping-local.ssp") && (profile.get('isLoggedIn') === 'F') ;
+				});		
+				
+				layout.addToViewContextDefinition('Header.View', 'showOverlaysignup', 'boolean', function (context) {
+					return (existingFrag == "/signup") && (profile.get('isLoggedIn') === 'F') ;
+				});			
+
+				layout.addToViewContextDefinition('Header.View', 'existingFrag', 'boolean', function (context) {
+					return existingFrag;
 				});
 
 				layout.addToViewContextDefinition('Header.View', 'isUserLoggedIn', 'boolean', function (context) {

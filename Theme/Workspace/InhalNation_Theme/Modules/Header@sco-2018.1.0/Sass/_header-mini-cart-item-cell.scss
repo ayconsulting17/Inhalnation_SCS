@@ -76,3 +76,10 @@
     display: inline-block;
     margin-bottom: $sc-margin-base;
 }
+
+.stock-limit-warning{
+	display:block;
+	color:red;
+	padding:0px 0px 10px 0px;
+	font-weight: bold;
+}

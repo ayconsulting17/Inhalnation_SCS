@@ -62,7 +62,7 @@
 
 			<div data-view="RecentlyViewed.Items" class="cart-detailed-recently-viewed"></div>
 			<div data-view="Related.Items" class="cart-detailed-related"></div>
-			<div data-view="Correlated.Items" class="cart-detailed-correlated"></div>
+			{{!-- <div data-view="Correlated.Items" class="cart-detailed-correlated"></div> --}}
 		{{else}}
 			<div data-view="SavedForLater" class="cart-detailed-savedforlater"></div>
 		{{/if}}

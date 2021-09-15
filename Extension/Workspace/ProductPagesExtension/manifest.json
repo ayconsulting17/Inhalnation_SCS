@@ -1,50 +1,49 @@
 {
-	"name": "ProductPagesExtension",
-	"fantasyName": "ProductPagesExtension",
-	"vendor": "AECC",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": ">=21.1.0",
-		"SCS": ">=21.1.0"
-	},
-	"version": "1.6.0",
-	"description": "",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": []
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"shopping": "Modules/ProductPageExtension/Sass/_productpageextension-productpageextension.scss"
-		},
-		"files": [
-			"Modules/ProductPageExtension/Sass/_productpageextension-productpageextension.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/ProductPageExtension/JavaScript/AECC.ProductPageExtension.ProductPageExtension.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/ProductPageExtension/JavaScript/AECC.ProductPageExtension.ProductPageExtension.js"
-				]
-			}
-		}
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/aecc/ProductPagesExtension@1.6.0",
-	"activation_id": "1",
-	"extension_id": "5001"
+    "name": "ProductPagesExtension",
+    "fantasyName": "ProductPagesExtension",
+    "vendor": "AECC",
+    "version": "1.6.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
+    },
+    "description": "",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/ProductPageExtension/Sass/_productpageextension-productpageextension.scss"
+        },
+        "files": [
+            "Modules/ProductPageExtension/Sass/_productpageextension-productpageextension.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/ProductPageExtension/JavaScript/AECC.ProductPageExtension.ProductPageExtension.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ProductPageExtension/JavaScript/AECC.ProductPageExtension.ProductPageExtension.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace/ProductPagesExtension",
+    "suitescript2": {
+        "files": []
+    }
 }

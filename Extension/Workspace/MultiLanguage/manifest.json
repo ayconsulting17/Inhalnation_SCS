@@ -1,85 +1,84 @@
 {
-	"name": "MultiLanguage",
-	"fantasyName": "MultiLanguage",
-	"vendor": "AECC",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "21.1.0",
-		"SCS": "21.1.0"
-	},
-	"version": "1.0.0",
-	"description": "Sets the language on the site",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		}
-	},
-	"templates": {
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/MultiLanguage/Templates/nra_multilanguage_multilanguage.tpl"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/MultiLanguage/Templates/nra_multilanguage_multilanguage.tpl"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/MultiLanguage/Templates/nra_multilanguage_multilanguage.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"shopping": "Modules/MultiLanguage/Sass/_multilanguage-multilanguage.scss",
-			"myaccount": "Modules/MultiLanguage/Sass/_multilanguage-multilanguage.scss",
-			"checkout": "Modules/MultiLanguage/Sass/_multilanguage-multilanguage.scss"
-		},
-		"files": [
-			"Modules/MultiLanguage/Sass/_multilanguage-multilanguage.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/MultiLanguage/JavaScript/MultiLanguage.MultiLanguage.js",
-			"myaccount": "Modules/MultiLanguage/JavaScript/MultiLanguage.MultiLanguage.js",
-			"checkout": "Modules/MultiLanguage/JavaScript/MultiLanguage.MultiLanguage.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/MultiLanguage/JavaScript/MultiLanguage.View.js",
-					"Modules/MultiLanguage/JavaScript/MultiLanguage.MultiLanguage.js"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/MultiLanguage/JavaScript/MultiLanguage.View.js",
-					"Modules/MultiLanguage/JavaScript/MultiLanguage.MultiLanguage.js"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/MultiLanguage/JavaScript/MultiLanguage.View.js",
-					"Modules/MultiLanguage/JavaScript/MultiLanguage.MultiLanguage.js"
-				]
-			}
-		}
-	},
-	"suitescript2": {
-		"files": [
-			"Modules/MultiLanguage/SuiteScript2/MultiLanguage.Service.ss"
-		]
-	},
-	"path": "SuiteScripts/Deploy_Extensions/aecc/MultiLanguage@1.0.0",
-	"activation_id": "1",
-	"extension_id": "3501"
+    "name": "MultiLanguage",
+    "fantasyName": "MultiLanguage",
+    "vendor": "AECC",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "21.1.0",
+        "SCS": "21.1.0"
+    },
+    "description": "Sets the language on the site",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/MultiLanguage/Sass/_multilanguage-multilanguage.scss",
+            "myaccount": "Modules/MultiLanguage/Sass/_multilanguage-multilanguage.scss",
+            "checkout": "Modules/MultiLanguage/Sass/_multilanguage-multilanguage.scss"
+        },
+        "files": [
+            "Modules/MultiLanguage/Sass/_multilanguage-multilanguage.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/MultiLanguage/Templates/nra_multilanguage_multilanguage.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/MultiLanguage/Templates/nra_multilanguage_multilanguage.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/MultiLanguage/Templates/nra_multilanguage_multilanguage.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/MultiLanguage/JavaScript/MultiLanguage.MultiLanguage.js",
+            "myaccount": "Modules/MultiLanguage/JavaScript/MultiLanguage.MultiLanguage.js",
+            "checkout": "Modules/MultiLanguage/JavaScript/MultiLanguage.MultiLanguage.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/MultiLanguage/JavaScript/MultiLanguage.View.js",
+                    "Modules/MultiLanguage/JavaScript/MultiLanguage.MultiLanguage.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/MultiLanguage/JavaScript/MultiLanguage.View.js",
+                    "Modules/MultiLanguage/JavaScript/MultiLanguage.MultiLanguage.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/MultiLanguage/JavaScript/MultiLanguage.View.js",
+                    "Modules/MultiLanguage/JavaScript/MultiLanguage.MultiLanguage.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace/MultiLanguage",
+    "suitescript2": {
+        "files": [
+            "Modules/MultiLanguage/SuiteScript2/MultiLanguage.Service.ss"
+        ]
+    }
 }
