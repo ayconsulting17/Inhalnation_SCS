@@ -2,15 +2,14 @@
     "name": "ProductPagesExtension",
     "fantasyName": "ProductPagesExtension",
     "vendor": "AECC",
-    "version": "1.6.0",
     "type": "extension",
     "target": "SCA,SCS",
     "target_version": {
         "SCA": ">=21.1.0",
         "SCS": ">=21.1.0"
     },
+    "version": "1.6.0",
     "description": "",
-    "skins": [],
     "assets": {
         "img": {
             "files": []
@@ -42,7 +41,6 @@
             }
         }
     },
-    "local_folder": "Workspace/ProductPagesExtension",
     "suitescript2": {
         "files": []
     }

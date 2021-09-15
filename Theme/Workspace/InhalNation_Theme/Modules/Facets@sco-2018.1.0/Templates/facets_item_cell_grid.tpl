@@ -22,7 +22,7 @@
 		<div class="facets-item-cell-grid-price" data-view="ItemViews.Price"></div>
 
 		{{#ifEquals isonsale true}}
-		<div class="sale-plp">Save {{percentoff}} %</div>
+		<div class="sale-plp">Save {{salepercent}} %</div>
 		<div class="plp-price-old">{{oldprice}}</div>
 		<div class="plp-price-sale">{{priceplp}}</div>
 		{{else}}

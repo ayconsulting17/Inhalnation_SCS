@@ -1,11 +1,17 @@
- {{#if showOverlay}}
+ 
+
+{{#if showOverlay}}
+{{#ifEquals existingFrag '/scs/checkout.ssp'}}
+{{else}}
 	<div class="overlay-container">
 		<div class="modal-container">
 		You do not have access to this page. Please Login or Register.
 		<a href="https://{{shoppingDomain}}"><div class="main-page-btn">Go Back to Main Page</div></a>
 		</div>
 	</div>
-	{{/if}} 
+{{/ifEquals}}
+{{/if}} 
+
 
 <div class="header-message" data-view="Message.Placeholder"></div>
 
@@ -121,6 +127,7 @@ FYI: We're calling this same block (but with a different class name) in "header_
 <div class="header-site-search search-mobile" data-view="SiteSearch" data-type="SiteSearch"></div>
 {{/if}}
 
+{{log this}}
 
 {{!----
 Use the following context variables when customizing this template:

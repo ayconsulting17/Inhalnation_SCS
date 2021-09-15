@@ -1,0 +1,41 @@
+{
+    "name": "CheckoutExtension",
+    "fantasyName": "CheckoutExtension",
+    "vendor": "AECC",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
+    },
+    "description": "Add Stock Warning on Transaction Lines",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/CheckoutExtension/JavaScript/AECC.CheckoutExtension.CheckoutExtension.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/CheckoutExtension/JavaScript/AECC.CheckoutExtension.CheckoutExtension.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace/CheckoutExtension",
+    "suitescript2": {
+        "files": []
+    }
+}

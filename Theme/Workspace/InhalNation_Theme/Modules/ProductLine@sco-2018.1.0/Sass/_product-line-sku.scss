@@ -2,12 +2,20 @@
 
 .product-line-sku-container {
     margin-bottom: $sc-margin-lv4;
+    margin-top:$sc-margin-lv3;
     
-    .cart-lines-table-middle & {
-        display: flex;
+    // .cart-lines-table-middle & {
+    //     display: flex;
+    // }
+
+    .line-stock-container{
+    margin-bottom: 15px;
+    margin-top: 15px;
     }
+
+
 }
-.product-line-sku-value {
+.product-line-sku-value, .current-stock-line-value {
 	@extend .sc-sku-value;
     color:black;
     opacity: 1;
@@ -25,12 +33,13 @@
         }
     }
 }
-.product-line-sku-label {
+.product-line-sku-label, .current-stock-line {
     @extend .sc-sku-label;
     margin-right: 3px;
     color: black;
     opacity: 0.3;
     font-size: 16px;
+    font-weight:300;
     
     .cart-lines-table-middle & {
         @media (min-width: $screen-sm-min) {
@@ -46,11 +55,4 @@
         margin-left: -2px;
         content: ':';
     }
-}
-
-.stock-limit-warning{
-	display:block;
-	color:red;
-	padding:0px 0px 10px 0px;
-	font-weight: bold;
 }

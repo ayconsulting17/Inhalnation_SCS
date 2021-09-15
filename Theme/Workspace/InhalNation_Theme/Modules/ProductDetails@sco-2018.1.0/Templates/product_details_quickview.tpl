@@ -25,7 +25,7 @@
 
 					<!-- <div data-view="Product.Sku"></div> -->
 						{{#ifEquals isonsale true}}
-						<div class="sale-plp-list">Save {{percentoff}} %</div>
+						<div class="sale-plp-list">Save {{salepercent}} %</div>
 						<div class="plp-price-old">{{oldprice}}</div>
 						<div class="plp-price-sale">{{priceplp}}</div>
 						{{else}}

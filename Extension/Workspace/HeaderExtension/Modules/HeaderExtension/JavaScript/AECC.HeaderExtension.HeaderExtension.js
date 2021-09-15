@@ -65,7 +65,7 @@ define(
 				});
 
 				layout.addToViewContextDefinition('Header.View', 'showOverlay', 'boolean', function (context) {
-					return (existingFrag !== "/scs/shopping-local.ssp") && (profile.get('isLoggedIn') === 'F') ;
+					return (existingFrag !== "/") && (profile.get('isLoggedIn') === 'F') ;
 				});		
 				
 				layout.addToViewContextDefinition('Header.View', 'showOverlaysignup', 'boolean', function (context) {

@@ -57,7 +57,7 @@
 			</button>
 
 			<div class="login-links-container">
-			<a class="login-register-login-forgot" href="https://test.smpt.store/signup">
+			<a class="login-register-login-forgot" href="https://www.inhalnation.com/signup">
 				{{translate 'New Customer? Create Account'}}
 			</a>
 
